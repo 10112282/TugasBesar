@@ -55,6 +55,11 @@ int main() {
       int *ptr, i;
       int a,indeks;
       
+      printf("TUGAS BESAR ANALISIS ALGORITMA \n");
+      printf("Di buat Oleh : - Mochamad Irfan Mardani (10112240)\n");
+      printf("               - Fahrul Rizaldi         (10112272)\n");
+      printf("               - Teddy Khairul Jamil    (10112282)\n\n\n");
+      
       printf("String Matching Dengan Algoritma KMP\n");
       printf("--------------------------------------------\n");
       /* Inputan teks */
