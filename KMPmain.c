@@ -63,12 +63,12 @@ int main() {
       printf("String Matching Dengan Algoritma KMP\n");
       printf("--------------------------------------------\n");
       /* Inputan teks */
-      printf("Masukan Teks:");
+      printf("Masukan Teks : ");
       fgets(string, 1024, stdin);
       string[strlen(string) - 1] = '\0';
 
       /* Inputan Pattern*/
-      printf("Masukan Pattern:");
+      printf("Masukan Pattern : ");
       fgets(kata, 256, stdin);
       kata[strlen(kata) - 1] = '\0';
 
