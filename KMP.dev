@@ -30,7 +30,7 @@ CompilerSet=0
 CompilerSettings=
 
 [Unit1]
-FileName=main_KMP.c
+FileName=KMPmain.c
 CompileCpp=0
 Folder=
 Compile=1
