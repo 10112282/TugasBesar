@@ -13,6 +13,11 @@ int main()
   
   //String
   char kata[100];
+  printf("TUGAS BESAR ANALISIS ALGORITMA \n");
+  printf("Di buat Oleh : - Mochamad Irfan Mardani (10112240)\n");
+  printf("               - Fahrul Rizaldi         (10112272)\n");
+  printf("               - Teddy Khairul Jamil    (10112282)\n\n\n");
+  
   printf("String Matching Dengan Algoritma Brute Force\n");
   printf("--------------------------------------------\n");
   printf("Masukkan sebuah teks = ");
