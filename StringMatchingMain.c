@@ -156,7 +156,9 @@ int main(int argc, char *argv[])
                 break;
            case 3 :
                   system("cls");
-                  printf("Program ini case sensitive \nArti nya akan membedakan antara A dengan a");
+                  printf("1. Program ini case sensitive Arti nya akan membedakan antara A dengan a\n");
+                  printf("2. Dengan menggunakkan algortma brute force maka pencarian akan terus dilakukan\n   hingga akhir data, walau sebelumnya data yang di cari sudah di temukan\n");
+                  printf("3. Berbeda Dengan menggunakkan algortma KMP, pencarian akan berhenti \n   jika data sudah di temukan"); 
                   getch();
                   break;
                   
