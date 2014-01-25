@@ -69,12 +69,15 @@ int main(int argc, char *argv[])
     printf("-------------------------------\n");
     printf("1. Brute Force\n");
     printf("2. Knuth Morris Pratt\n");
-    printf("3. Keluar\n");
+    printf("3. Informasi\n");
+    printf("4. Keluar\n");
     printf("-------------------------------\n");
-    printf("Masukkan menu pilihan :");
+    printf("Masukkan menu pilihan [1-3] : ");
     scanf("%i", &menu);
-    switch (menu){
-           case 1 :
+    
+    switch (menu)
+    {
+           case 1 : //SUBMENU 1
                 system("cls");
                 //String
                 printf("String Matching Dengan Algoritma Brute Force\n");
@@ -121,18 +124,19 @@ int main(int argc, char *argv[])
                 getch();
                 break;
                 
-           case 2 :
+           case 2 : //SUBMENU 2
                 system("cls");
                 printf("String Matching Dengan Algoritma KMP\n");
                 printf("--------------------------------------------\n");
+                
                 /* Inputan teks */
-                printf("Masukan Teks:");
+                printf("Masukan Teks : ");
                 fflush(stdin);
                 fgets(string, 1024, stdin);
                 string[strlen(string) - 1] = '\0';
 
                 /* Inputan Pattern*/
-                printf("Masukan Pattern:");
+                printf("Masukan Pattern : ");
                 fflush(stdin);
                 fgets(kata, 256, stdin);
                 kata[strlen(kata) - 1] = '\0';
@@ -141,6 +145,7 @@ int main(int argc, char *argv[])
 
                 /* Mencari kesamaan kata dengan pattern */
                 carikesamaan(kata, ptr);
+                
                 /* mencari indeks pattern pada teks */
                 carikmp(string, kata, ptr,&ketemu,a,indeks);
                 if(ketemu==false){
@@ -150,13 +155,26 @@ int main(int argc, char *argv[])
                 getch();
                 break;
            case 3 :
-                break;
+                  system("cls");
+                  printf("Program ini case sensitive \nArti nya akan membedakan antara A dengan a");
+                  getch();
+                  break;
+                  
+           case 4 :
+                  system("cls");
+                  printf("TERIMAKASIH\n\n");
+                  printf("TUGAS BESAR ANALISIS ALGORITMA \n");
+                  printf("Di buat Oleh : - Mochamad Irfan Mardani (10112240)\n");
+                  printf("               - Fahrul Rizaldi         (10112272)\n");
+                  printf("               - Teddy Khairul Jamil    (10112282)\n\n\n");
+                  printf("Tekan sembarang tombol untuk keluar");
+                  getch();
+                  break;
            default :
-                   printf("Menu Pilihan Tidak Terdafratar");
+                   printf("\nMenu Pilihan Tidak Terdafratar");
                    getch();
     }
-    }while (menu != 3);
+    }while (menu != 4);
   
-  system("PAUSE");	
   return 0;
 }
