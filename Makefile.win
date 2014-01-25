@@ -1,12 +1,12 @@
-# Project: TugasBesar
+# Project: StringMatching
 # Makefile created by Dev-C++ 4.9.9.2
 
 CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = ../../Desktop/TugasBesar/main.o $(RES)
-LINKOBJ  = ../../Desktop/TugasBesar/main.o $(RES)
+OBJ  = StringMatchingMain.o $(RES)
+LINKOBJ  = StringMatchingMain.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
@@ -26,5 +26,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o "StringMatching.exe" $(LIBS)
 
-../../Desktop/TugasBesar/main.o: ../../Desktop/TugasBesar/main.c
-	$(CC) -c ../../Desktop/TugasBesar/main.c -o ../../Desktop/TugasBesar/main.o $(CFLAGS)
+StringMatchingMain.o: StringMatchingMain.c
+	$(CC) -c StringMatchingMain.c -o StringMatchingMain.o $(CFLAGS)

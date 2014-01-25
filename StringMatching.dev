@@ -1,6 +1,6 @@
 [Project]
-FileName=..\..\Desktop\TugasBesar\TugasBesar.dev
-Name=TugasBesar
+FileName=StringMatching.dev
+Name=StringMatching
 UnitCount=1
 Type=1
 Ver=1
@@ -30,7 +30,7 @@ CompilerSet=0
 CompilerSettings=
 
 [Unit1]
-FileName=..\..\Desktop\TugasBesar\main.c
+FileName=StringMatchingMain.c
 CompileCpp=0
 Folder=
 Compile=1
